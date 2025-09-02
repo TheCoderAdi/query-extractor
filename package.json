@@ -1,0 +1,44 @@
+{
+  "name": "query-extractor",
+  "displayName": "Query Extractor",
+  "description": "Let me extract the variables from the query",
+  "version": "0.0.1",
+  "publisher": "Aditya Swayam Siddha",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "query-extractor.extractVariables",
+        "title": "Query Extractor: Extract Variables"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.54.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "eslint": "^9.32.0",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecoderadi/query-extractor"
+  },
+  "bugs": {
+    "url": "https://github.com/thecoderadi/query-extractor/issues"
+  },
+  "homepage": "https://github.com/thecoderadi/query-extractor#readme"
+}
