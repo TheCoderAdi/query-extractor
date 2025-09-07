@@ -3,7 +3,8 @@
   "displayName": "Query Extractor",
   "description": "Let me extract the variables from the query",
   "version": "0.0.1",
-  "publisher": "Aditya Swayam Siddha",
+  "icon": "assets/icon.png",
+  "publisher": "AdityaSwayamSiddha",
   "engines": {
     "vscode": "^1.54.0"
   },
