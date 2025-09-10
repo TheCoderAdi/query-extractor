@@ -2,7 +2,7 @@
   "name": "query-extractor",
   "displayName": "Query Extractor",
   "description": "Let me extract the variables from the query",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icon": "assets/icon.png",
   "publisher": "AdityaSwayamSiddha",
   "engines": {
