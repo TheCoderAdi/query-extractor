@@ -5,11 +5,11 @@ function extractVariables(sql, ignoreComments = true) {
 
 	if (ignoreComments) {
 		text = text
-			.replace(/--.*?$/gm, '') 
-			.replace(/\/\*[\s\S]*?\*\//g, ''); 
+			.replace(/--.*?$/gm, '')
+			.replace(/\/\*[\s\S]*?\*\//g, '');
 	}
 
-	const regex = /(?<!\\)(?:['"])?\$\{\s*([A-Za-z_][A-Za-z0-9_\.]*)\s*\}(?:['"])?/g;
+	const regex = /(?<!\\)(?:['"])?\$\{\s*([A-Za-z0-9_\.\[\]]+)\s*\}(?:['"])?/g;
 	const found = new Set();
 
 	let match;
